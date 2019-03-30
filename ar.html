@@ -1,0 +1,19 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+<a-scene embedded arjs = 'trackingMethod: best;'>
+   <a-anchor hit-testing-enabled="false">
+       <!-- Business Card -->
+       <a-plane src="assets/textures/board.jpg" height="2" width="3" color="grey" position="0 0 0" rotation="-90 0 0">
+           <a-text value="John Doe" position="-0.35 0.8 0.05" width="3"></a-text>
+           <a-text value="How machine learning is used in processing text" position="-1.1 0.65 0.05" width="2.4"></a-text>
+           <a-text value="11h15" position="-0.2 -0.7 0.05" width="3"></a-text>
+           <a-image src="assets/pictures/john.jpg" width="0.8" height="0.8" position="0 0 0.06"></a-image>
+       </a-plane>
+   </a-anchor>
+    <a-camera-static/>
+</a-scene>
+</body>
+</html>
